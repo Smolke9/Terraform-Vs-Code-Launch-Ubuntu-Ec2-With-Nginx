@@ -231,10 +231,19 @@ Run these commands from the project folder:
 
 ```bash
 terraform init             # downloads providers
+
+```
+![Output Screenshot](screenshot/1.jpg)
+
+![Output Screenshot](screenshot/2.jpg)
+
+---
 terraform fmt -recursive   # formats files
 terraform validate         # checks syntax
 terraform plan             # shows what will be created
 terraform apply -auto-approve
+
+![Output Screenshot](screenshot/3.jpg)
 ```
 
 Terraform will output the **public IP/DNS** and the ready‑to‑use **SSH command**.
@@ -244,7 +253,11 @@ Terraform will output the **public IP/DNS** and the ready‑to‑use **SSH comma
 ## 6) Test the Nginx site
 - Open a browser: `http://<PUBLIC_IP>`
 - You should see the custom HTML page deployed by `user_data`.
+```
+![Output Screenshot](screenshot/4.jpg)
 
+![Output Screenshot](screenshot/5.jpg)
+```
 ---
 
 ## 7) SSH into the instance
